@@ -1,7 +1,7 @@
 .DS_Store
 .project
 .idea/
-fullPage.js-master/
+#fullPage.js-master/
 
 # 임시
 css/examples.css
