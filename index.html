@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:http="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<title>처음과 같이 이제와 항상 영원히</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	
+	<style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+        @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+        body {
+            color: #333;
+            font-family: "Noto Sans KR", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+        }
+
+
+        h1 {
+            font-size: 5em;
+            font-family: "Nanum Myeongjo", arial,helvetica;
+            margin:0;
+            padding:0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 0 0 18px 0;
+            font-family: arial,helvetica;
+        }
+
+	</style>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+                // Navigation
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['메인페이지', '우리모습보기', '위치 및 안내', '끝맺음'],
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+
+                //Design
+                controlArrows: true,
+                sectionsColor : ['#ccc', '#ffe'],
+                paddingTop: '3em',
+                paddingBottom: '10px',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: true,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+                lazyLoading: true,
+
+                //events
+//                onLeave: function(index, nextIndex, direction){},
+//                afterLoad: function(anchorLink, index){},
+//                afterRender: function(){},
+//                afterResize: function(){},
+//                afterResponsive: function(isResponsive){},
+//                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+//                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+            });
+		});
+	</script>
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <!--  메인 페이지  -->
+        <div class="section">
+            <h1>메인페이지</h1>
+        </div>
+
+        <!--  우리모습보기 페이지  -->
+        <div class="section">
+            <h1>우리모습보기</h1>
+            <div class="slide">
+                <p>Slide 1</p>
+                <img src="http://placehold.jp/150x50.png" alt="">
+            </div>
+            <div class="slide"> Slide 2 </div>
+            <div class="slide"> Slide 3 </div>
+            <div class="slide"> Slide 4 </div>
+        </div>
+
+        <!--  세 번째 페이지  -->
+        <div class="section">
+            <h1>위치 및 안내</h1>
+        </div>
+
+        <!--  네 번째 페이지  -->
+        <div class="section">
+            <h1>끝맺음</h1>
+        </div>
+
+        <!--  테스트 페이지  -->
+        <div class="section">
+            <h1>여기는 테스트 페이지</h1>
+        </div>
+    </div>
+
+</body>
+</html>
