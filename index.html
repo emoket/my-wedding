@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
-	<title>처음과 같이 이제와 항상 영원히</title>
+	<title>박용진 * 곽명선 축 결혼</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
@@ -26,30 +26,66 @@
         }
 
         h2 {
-            font-size: 2em;
-            margin: 0 0 18px 0;
-            font-family: arial,helvetica;
+        font-size: 2em;
+        margin: 0 0 18px 0;
+        font-family: arial,helvetica;
         }
 
+        /* Centered texts in each section
+	    * --------------------------------------- */
+        .section{
+            text-align:center;
+        }
+
+
+        /* Backgrounds will cover all the section
+	    * --------------------------------------- */
+        #section0,
+        #section1,
+        #section2,
+        #section3 {
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
         /* Defining each section background and styles */
-        #section0{
-            background-image: url(images/PAL_0526.jpg);
+        #section0 {
+            background-image: url(imgs/bg1.jpg);
         }
-        #section0 h1{
-            top: 50%;
-            transform: translateY(-50%);
-            position: relative;
-        }
-        #section2{
-            background-image: url(imgs/bg3.jpg);
+        #section2 {
+            background-image: url(imgs/PAL_0526.jpg);
             padding: 6% 0 0 0;
         }
-        #section3{
+        #section3 {
             background-image: url(imgs/bg4.jpg);
             padding: 6% 0 0 0;
         }
-        #section3 h1{
+        #section3 h1 {
             color: #000;
+        }
+
+
+        /*Adding background for the slides
+        * --------------------------------------- */
+        #slide1 {
+            background-image: url(imgs/josh-felise-36093.jpg);
+            padding: 6% 0 0 0;
+        }
+        #slide2 {
+            background-image: url(imgs/ivan-cabanas-145921.jpg);
+            padding: 6% 0 0 0;
+        }
+        #slide3 {
+            background-image: url(imgs/andrew-itaga-145333.jpg);
+            padding: 6% 0 0 0;
+        }
+
+
+        /* Bottom menu
+        * --------------------------------------- */
+        #infoMenu li a {
+            color: #fff;
         }
 
 	</style>
@@ -99,9 +135,13 @@
 
 <body>
     <div id="fullpage">
+
+
+
         <!--  메인 페이지  -->
         <div class="section" id="section0">
             <h1>메인페이지</h1>
+            <p>처음과 같이 이제와 항상 영원히</p>
         </div>
 
         <!--  우리모습보기 페이지  -->
@@ -125,12 +165,11 @@
         <!--  네 번째 페이지  -->
         <div class="section" id="section3">
             <h1>끝맺음</h1>
+            <h3>처음과 같이 이제와 항상 영원히</h3>
         </div>
 
-        <!--  테스트 페이지  -->
-        <div class="section" id="section4">
-            <h1>여기는 테스트 페이지</h1>
-        </div>
+
+
     </div>
 
 </body>
