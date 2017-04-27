@@ -1,8 +1,4 @@
 .DS_Store
 .project
-.idea/
-#fullPage.js-master/
-
-# 임시
-css/examples.css
-js/examples.js
+.ftpconfig
+.ftpconfig _dothome
