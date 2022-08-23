@@ -216,17 +216,10 @@ img {
 
 .content-detail {
     font-weight: 400;
-    margin-top: 70px;
-    line-height: 30px;
-    font-size: 14px;
-    letter-spacing: 0.4px;
-}
-
-.content-details {
-    font-weight: 400;
     margin-top: 40px;
     line-height: 30px;
     font-size: 14px;
+    letter-spacing: 0.4px;
 }
 
 .pad-bottom {
